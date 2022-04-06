@@ -1,0 +1,20 @@
+li {
+    text-transform: capitalize;
+    cursor: grab;  
+}
+
+.list-group {
+    margin: 10px;
+}
+
+.forecast {
+    margin: 8px;
+}
+
+.none {
+    display: none;
+}
+
+.city-name {
+    font-size:16pt;
+}

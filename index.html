@@ -7,13 +7,88 @@
     <title>Weather Dashboard</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
 </head>
 <body>
-    
-
-
-
+  
+    <header class="container-fluid p-3 mb-2 text-white bg-dark text-center">
+      <h1>Weather Dashboard</h1></header>
+                 
+            <div class="container-fluid">
+                <div class="row">
+                 <div class=col-sm-1></div> 
+                <div class="col-2"><h5>Search for a City:</h5>
+                          <div class="input-group">
+                              <input type="text" class="form-control" placeholder="">
+                              <div class="input-group-append">
+                              <button data-city class="btn btn-secondary button" type="button">
+                                  <i class="fa fa-search"></i>
+                              </button>
+                              </div>
+                          </div>
+                          <ul class="list-group previous-cities" >
+                          </ul>
+                        </div>   
+                  <div class="col-8">
+                      <h5>Current Forecast:</h5>
+                    <div class="card w-100">
+                        <div id="new-city" class="card-body city-name">
+                        </div>
+                    </div>
+                    <div class="forecast">
+                        <h5>5-Day Forecast:</h5>
+                        <div class="row " id="five-day">
+                          <div class="col-sm-2">
+                            <div class="five card  text-white bg-secondary mb-3">
+                              <div id="1" class="card-body">
+                                <p class="card-text"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-2">
+                            <div class="five card  text-white bg-secondary mb-3">
+                              <div id="2" class="card-body">
+                                <p class="card-text"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-2">
+                            <div class="five card  text-white bg-secondary mb-3">
+                              <div id="3" class="card-body">
+                                <p class="card-text"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-2">
+                            <div class="five card  text-white bg-secondary mb-3">
+                              <div id="4" class="card-body">
+                                <p class="card-text"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-2">
+                              <div class="five card  text-white bg-secondary mb-3">
+                                <div id="5" class="card-body">
+                                  <p class="card-text"></p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                  <div class="col-sm-1"></div>
+                </div>
+              </div>       
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                    </div>
+                  </div>    
+                </div>
+        
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
